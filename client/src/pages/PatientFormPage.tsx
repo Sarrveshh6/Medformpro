@@ -111,7 +111,7 @@ export default function PatientFormPage() {
   }
 
   // Get all questions flattened
-  const allQuestions = template.sections.flatMap(section => section.questions);
+  const allQuestions = template.sections.flatMap((section: any) => section.questions);
 
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 text-slate-900">

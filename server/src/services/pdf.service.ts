@@ -94,7 +94,7 @@ export const generateSubmissionPDF = (
     });
   });
 
-  submission.responses.forEach(response => {
+  submission.responses.forEach((response: any) => {
     const q = questionMap.get(response.questionId);
     if (q) {
       doc.font('Helvetica-Bold').text(`${q.questionId}: ${q.text}`);
