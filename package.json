@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "npm run dev --workspaces",
     "build": "npm run build --workspaces",
+    "start": "npm run start --workspace=server",
     "install:all": "npm install"
   }
 }
